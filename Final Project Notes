@@ -1,0 +1,105 @@
+Final Project Notes:
+
+Testing Methods:
+http://www.topendsports.com/testing/bodyfat-skinfolds.htm
+	Jackson and Pollock
+		3 site test
+		Men
+			Chest
+			Abdominal
+			Thigh
+		Women
+			Tricep
+			Suprailliac
+			Thigh
+		Calculating Body Density For men, the body density formula is as follows: Body Density = 1.10938 – (0.0008267 x the sum of the chest, thigh and abdomen skin folds in mm) + (0.0000016 x square of the sum of chest, abdomen and thigh) - (0.0002574 x age). For women, the body density formula is as follows: Body Density = 1.0994921 - (0.0009929 x sum of thigh, triceps and suprailiac skin folds) + (0.0000023 x square of the sum of thigh, triceps and suprailiac skin folds) - (0.0001392 x age in years).
+
+		To calculate body fat percentage, divide 495 by the body density, then subtract 450 and multiply by 100 (Kasch).
+
+BMI
+	Weight
+	Height
+
+Jackson and Pollock
+	7 site test
+		Chest
+		Abdominal
+		Thigh
+		Tricep
+		Subscapular
+		Suprailiac
+		Midaxillary
+	Calculation
+		http://www.free-online-calculator-use.com/skin-fold-test.html
+
+Waist Circumference
+Waist to Hip Ratio
+	http://www.healthstatus.com/calculate/waist-to-hip-ratio
+
+Sloan Equation
+	Males
+		Body Density = 1.1043 - (0.001327 x thigh skinfold in mm) - (0.00131 x subscapular skinfold in mm), based on a sample aged 18-26. 
+	Females
+		Body Density = 1.0764 - (0.0008 x iliac crest skinfold in mm) - (0.00088 x tricep skinfold in mm), based on a sample aged 17-25. 
+	Body Fat %
+		% Body Fat = (495 / Body Density) - 450.
+
+Durnin and Womersly
+	http://www.topendsports.com/testing/density-durnin-womersley.htm
+	Tricep
+	Bicep
+	Subscapular
+	Suprailiac
+	Density
+		see chart
+
+Parillo Method
+	% Body Fat = (Sum of 9 sites x 27) divided by bodyweight (lbs) where sum of skinfold sites is in mm, body weight in lbs.
+	Sites
+		Chest
+		Abdominal
+		Thigh
+		Bicep
+		Tricep
+		Subscapular
+		Suprailiac
+		Lower Back
+		Calf
+
+Yuhasz Method
+	Males 1 = (.1051 * sum of skinfolds) + 2.585
+		Triceps
+		Subscapular
+		Supraspinale
+		Abdominal
+		Thigh
+		Calf
+	Males 2 = (.097 x sum of skinfolds) + 3.64
+		Chest
+		Tricepts
+		Subscapular
+		Suprailiac
+		Abdominal
+		Thigh
+	Females = (.1548 * sum of skinfolds) + 3.580
+		Triceps
+		Subscapular
+		Supraspinale
+		Abdominal
+		Thigh
+		Calf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

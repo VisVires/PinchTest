@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PinchTest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="{{CLIENT_ID}}">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11"></div>
+            <div class="col-md-1">
+                <p><a onclick="logout()">Sign out</a></p>
+                <script>
+                    var logout = function(){
+                        document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://pinchtestweb.appspot.com/";
+                    }                   
+                </script>
+            </div>
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center"><a href="{{auth_uri}}">Log In</a></h1>
+			</div>
+    	</div>
+    </div>
+</body>
+</html>

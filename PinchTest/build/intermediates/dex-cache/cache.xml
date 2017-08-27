@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/georgew/Documents/GitHub/CS496/Final_Project/PinchTest/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d625dd00316037754d5db16b2e4d68ad1aa0a828">
+        <dex dex="/home/georgew/Documents/GitHub/CS496/Final_Project/PinchTest/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_868e31552631750cbdcd9c74553234e6cea8ab94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/georgew/Documents/GitHub/CS496/Final_Project/PinchTest/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/georgew/Documents/GitHub/CS496/Final_Project/PinchTest/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c57ae1f6622e15beeb23ae466a1826e8023cdaab/classes.dex" />
+    </item>
+
+</items>

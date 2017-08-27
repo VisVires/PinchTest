@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PinchTest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11"></div>
+            <div class="col-md-1">
+                <p><a onclick="logout()">Sign out</a></p>
+                <script>
+                    var logout = function(){
+                        document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://pinchtestweb.appspot.com/";
+                    }                   
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-striped table-condensed table-hover">
+                    <caption>My Body Fat Stats</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Weight</th>
+                            <th>Body Density</th>
+                            <th>Body Fat Percentage</th>
+                            <th>Fat Mass</th>
+                            <th>Lean Body Mass</th>
+                            <th>Bicep</th>
+                            <th>Tricep</th>
+                            <th>Subscapular</th>
+                            <th>Suprailiac</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-striped table-condensed table-hover">
+                    <caption>My Circumference Stats</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Neck</th>
+                            <th>Chest</th>
+                            <th>Upper Arm</th>
+                            <th>Forearm</th>
+                            <th>Waist</th>
+                            <th>Hips</th>
+                            <th>Thigh</th>
+                            <th>Calf</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
