@@ -1,23 +1,42 @@
-const request = require('request');
-const express = require('express');
-const app = express();
-const hbs = require('express-handlebars').create({defaultLayout:'main'});
-const session = require('express-session');
-const http = require('http');
-const https = require('https');
-const fs = require('fs');
-const path = require('path');
-//var util = request('util');
+var request = require('request');
+var express = require('express');
+var app = express();
+var hbs = require('express-handlebars').create({defaultLayout:'main'});
+var session = require('express-session');
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
+var path = require('path');
+var config = require('./config.js');
+var google = require('googleapis');
+var oauth2Client = google.auth.OAuth2;
+var plus = google.plus('v1');
+
+
+var client_id = config.client_id;
+var client_secret = config.client_secret;
+var redirect_url =  config.redirect_url
+var scopes = [
+	'https://www.googleapis.com/auth/plus.login',
+	'https://www.googleapis.com/auth/plus.me',
+	'https://www.googleapis.com/auth/userinfo.email',
+	'https://www.googleapis.com/auth/userinfo.profile'
+];
+
+//var url = oauth2Client.generateAuthUrl({
+//	access_type: 'offline',
+//	scope: scopes
+//});
+
 const router = express.Router();
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3000);
+app.set('port', 8080);
 app.use(express.static('public'));
 
 app.get('/', function (req,res) {
-    var context = {'active': {'aboutme': true}};
-	res.render('aboutme', context);
+    console.log(redirect_url);
 });
 
 
