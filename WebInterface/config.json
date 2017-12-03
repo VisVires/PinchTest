@@ -1,0 +1,5 @@
+"OAUTH2_CLIENT_ID": "893397818126-9r3dghaseltqhu39rp0a1dga1jdaki2b.apps.googleusercontent.com",
+"OAUTH2_CLIENT_SECRET": "O7B1fDpqR7F9pWQmyUr_SbTT",
+"OAUTH2_CALLBACK": "http://localhost:3000/auth/google/callback",
+"MEMCACHE_URL": "[YOUR_MEMCACHE_URL]"
+
