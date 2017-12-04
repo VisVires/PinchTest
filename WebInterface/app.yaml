@@ -1,10 +1,4 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: nodejs
+env: flex
 
-handlers:
-- url: /stylesheets
-  static_dir: stylesheets
-- url: /.*
-  script: main.app
   

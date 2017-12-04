@@ -1,64 +1,64 @@
 {
-  "name": "blogsite",
-  "description": "A Site with everything about me, including what I'm working on currently, projects, resume and photography.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/VisVires/blogSite",
-  "author": "William George <wgeorge@outlook.com>",
-  "repository": "git://github.com/VisVires/blogSite.git",
-  "bugs": {
-    "url": "https://github.com/VisVires/blogSite/issues"
+  "name": "appengine-body-fat",
+  "description": "",
+  "version": "0.0.1",
+  "private": false,
+  "license": "",
+  "author": "William George",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VisVires/PinchTest"
   },
-  "licenses": [
-    {
-      "type": "n",
-      "url": "https://github.com/VisVires/blogSite/master/LICENSE-n"
-    }
-  ],
-  "main": "index.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">=4.3.2"
   },
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "grunt nodeunit",
-    "start": "webpack-dev-server"
+    "deploy": "gcloud app deploy",
+    "start": "node webapp.js",
+    "lint": "samples lint",
+    "pretest": "npm run lint",
+    "system-test": "samples test app",
+    "test": "npm run system-test",
+    "e2e-test": "samples test deploy"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^2.0.1",
-    "express-session": "^1.12.1",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "mysql": "^2.9.0",
-    "request": "^2.67.0"
-  },
-  "keywords": [],
   "dependencies": {
-    "aws-sdk": "^2.153.0",
-    "forever": "^0.15.1",
+    "express": "4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
     "fs": "0.0.1-security",
-    "google-oauth2": "^0.1.0",
-    "googleapis": "^2.1.7",
-    "html-webpack-plugin": "^2.30.1",
     "http": "0.0.0",
     "https": "^1.0.0",
     "path": "^0.12.7",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "uniq": "^1.0.1",
-    "uti": "^3.1.0",
-    "util": "^0.10.3",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "request": "^2.83.0",
+    "@google-cloud/datastore": "1.1.0",
+    "@google-cloud/storage": "1.4.0",
+    "body-parser": "1.18.2",
+    "connect-memcached": "0.2.0",
+    "lodash": "4.17.4",
+    "mongodb": "2.2.33",
+    "multer": "1.3.0",
+    "mysql": "2.15.0",
+    "nconf": "0.8.5",
+    "passport": "0.4.0",
+    "passport-google-oauth20": "1.0.0",
+    "prompt": "1.0.0",
+    "pug": "2.0.0-rc.4",
+    "uglify-js": "3.1.6"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "1.4.17",
+    "ava": "0.23.0",
+    "proxyquire": "1.8.0",
+    "sinon": "4.0.2",
+    "tap-dot": "1.0.5"
+  },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "BodyFatPinchTest"
+      }
+    },
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
 }
